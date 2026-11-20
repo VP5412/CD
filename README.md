@@ -59,3 +59,11 @@ Practicals 11, 12 and 13 use their own expression grammars, written in the heade
 * 13: `2+3*4` gives `Result = 14`
 * 14: `a=b+c*d` gives `(0) (*,c,d)  (1) (+,b,(0))  (2) (=,a,(1))`
 * 15: with `cfg_input.txt`, B2 has predecessors B1, B3 and successors B3, B4
+
+
+
+unzip CD_Practicals.zip
+cd CD_Practicals
+flex p03b_count_chars_words_lines.l
+gcc lex.yy.c -o p03b
+./p03b sample_inputs/sample_text.txt
